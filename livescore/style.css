@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.navbar nav .active {
+  color: #fff;
+  border-bottom: 2px solid orange;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #151515;
+  padding: 20px;
+}
+
+.sidebar input {
+  width: 100%;
+  padding: 8px;
+  background: #222;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.sidebar h4 {
+  margin: 15px 0 8px;
+  color: #888;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.tabs button {
+  background: #222;
+  border: none;
+  color: #aaa;
+  padding: 8px 14px;
+  margin-right: 6px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.tabs .active {
+  background: #fff;
+  color: #000;
+}
+
+/* MATCHES */
+.matches {
+  margin-top: 20px;
+}
+
+.match {
+  display: grid;
+  grid-template-columns: 40px 1fr 80px 1fr;
+  padding: 12px;
+  background: #1a1a1a;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.score {
+  text-align: center;
+  font-weight: bold;
+}

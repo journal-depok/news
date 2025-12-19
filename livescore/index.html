@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LiveScore Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">LiveScore</div>
+  <nav>
+    <a class="active">Scores</a>
+    <a>News</a>
+    <a>Favourites</a>
+  </nav>
+</header>
+
+<div class="container">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <input type="text" placeholder="Search team..." />
+    
+    <h4>TEAMS</h4>
+    <ul>
+      <li>Manchester United</li>
+      <li>Liverpool</li>
+      <li>Arsenal</li>
+      <li>Manchester City</li>
+      <li>Tottenham</li>
+    </ul>
+
+    <h4>COMPETITIONS</h4>
+    <ul>
+      <li>Premier League</li>
+      <li>Bundesliga</li>
+      <li>LaLiga</li>
+      <li>Serie A</li>
+      <li>Ligue 1</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <div class="tabs">
+      <button class="active">Football</button>
+      <button>Hockey</button>
+      <button>Basketball</button>
+      <button>Tennis</button>
+      <button>Cricket</button>
+    </div>
+
+    <div class="matches">
+      <h3>Conference League</h3>
+
+      <div class="match">
+        <span class="time">FT</span>
+        <span class="team">AEK Athens</span>
+        <span class="score">3 - 2</span>
+        <span class="team">CSU Craiova</span>
+      </div>
+
+      <div class="match">
+        <span class="time">FT</span>
+        <span class="team">Crystal Palace</span>
+        <span class="score">2 - 2</span>
+        <span class="team">KuPS</span>
+      </div>
+
+      <div class="match">
+        <span class="time">FT</span>
+        <span class="team">Dynamo Kyiv</span>
+        <span class="score">2 - 0</span>
+        <span class="team">FC Noah</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
