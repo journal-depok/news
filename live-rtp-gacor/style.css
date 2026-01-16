@@ -81,4 +81,11 @@ h1 {
 .btn-card.login{
   background:linear-gradient(45deg,#facc15,#eab308);
   color:#000;
+
+}
+
+.btn-card.pola{
+  background:linear-gradient(45deg,#ef4444,#b91c1c);
+  border:none;
+  cursor:pointer;
 }
