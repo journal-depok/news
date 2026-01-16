@@ -656,8 +656,18 @@ games.forEach(game => {
           <span class="${color}" style="width:${game.rtp}%"></span>
         </div>
         <div class="percent">${game.rtp}%</div>
+        
+        <!-- BUTTON -->
+        <div class="card-buttons">
+          <a href="https://t.ly/win1131" class="btn-card daftar">DAFTAR</a>
+          <a href="https://t.ly/win1131" class="btn-card login">LOGIN</a>
+        </div>
+      </div>
+    </div>
+  `;
+});
 
-        function getPola(rtp) {
+function getPola(rtp) {
   if (rtp >= 80) {
     return "🔥 POLA GACOR\n• Turbo Spin\n• 10–20 Spin\n• Buy Feature jika tersedia";
   } else if (rtp >= 60) {
@@ -702,17 +712,6 @@ games.forEach(game => {
   grid.appendChild(card);
 });
 
-
-        <!-- BUTTON -->
-        <div class="card-buttons">
-          <a href="https://t.ly/win1131" class="btn-card daftar">DAFTAR</a>
-          <a href="https://t.ly/win1131" class="btn-card login">LOGIN</a>
-        </div>
-      </div>
-    </div>
-  `;
-});
-
 // UPDATE 1 GAME SETIAP 1 JAM
 setInterval(() => {
   games[currentIndex].rtp = randomRTP();
@@ -724,5 +723,6 @@ setInterval(() => {
 
   render();
 }, 3600000); // 1 JAM
+
 
 render();
